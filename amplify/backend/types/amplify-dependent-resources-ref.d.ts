@@ -1,15 +1,13 @@
 export type AmplifyDependentResourcesAttributes = {
     "auth": {
-        "reactapp": {
+        "reactappc3f3a32e": {
             "IdentityPoolId": "string",
-            "IdentityPoolName": "string"
-        }
-    },
-    "analytics": {
-        "reactAppAnalytics": {
-            "Region": "string",
-            "Id": "string",
-            "appName": "string"
+            "IdentityPoolName": "string",
+            "UserPoolId": "string",
+            "UserPoolArn": "string",
+            "UserPoolName": "string",
+            "AppClientIDWeb": "string",
+            "AppClientID": "string"
         }
     },
     "api": {

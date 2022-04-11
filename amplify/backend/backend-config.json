@@ -7,29 +7,32 @@
     }
   },
   "auth": {
-    "reactapp": {
+    "reactappc3f3a32e": {
       "service": "Cognito",
-      "serviceType": "managed",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
+      "customAuth": false,
       "frontendAuthConfig": {
         "socialProviders": [],
         "usernameAttributes": [],
-        "signupAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
         "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
           "passwordPolicyCharacters": []
         },
-        "mfaTypes": [],
-        "verificationMechanisms": []
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
       }
     }
   },
-  "analytics": {
-    "reactAppAnalytics": {
-      "service": "Pinpoint",
-      "providerPlugin": "awscloudformation"
-    }
-  },
+  "analytics": {},
   "api": {
     "reactapp": {
       "service": "AppSync",
